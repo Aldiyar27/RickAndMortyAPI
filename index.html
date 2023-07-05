@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <div class="header">
+        <div class="logo"><img src="Rick-And-Morty-Logo.png" alt="123"></div>
+        <nav class="text-header"><a href="index.html">Главная</a><a href="shop.html">Магазин</a><a href="basket.html">Корзина</a><button onclick="Sign()">Аккаунт</button></nav>
+    </div>
+    <div class="first-body">
+        <div class="poster-box">
+            <img src="Rick_and_Morty_Logo_and_Image.webp" alt="1234">
+            <p> Морти - обычный мальчик, который ничем не отличается <br>
+                от других. А вот его дедуля занимается необычными <br>
+                исследованиями и зачастую полностью неадекватен.</p>
+        </div>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="1300">
+                <img src="poster2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="1300">
+                <img src="poster3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="1300">
+                <img src="poster1r.webp" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <div class="title"><p>Коллекция</p></div>
+    <div class="cards-container"> </div>
+    <div class="shop-btn"><a href="shop.html">Перейти в магазин</a></div>
+    <div class="coupon">
+      <div class="img-coupon"><img src="coupon.png" alt=""></div>
+      <div class="text-coupon">
+        <p>Скидка 10% за подписку
+          на наши новости</p>
+          <div class="input-coupon">
+            <input type="text" id="searchInput"/>
+            <button onclick="clearSearch()">Получать</button>
+          </div>
+      </div>
+    </div>
+    <div class="down-body">
+      <div class="logo-down">
+        <img src="Rick-And-Morty-Logo.png" alt="">
+        <p>© Все права защищены</p>
+      </div>
+      <div class="contacts">
+        <p>Следите за нами в социальных сетях</p>
+        <img src="free-icon-facebook-app-symbol-20837.png" alt="">
+        <img src="free-icon-instagram-1384031.png" alt="">
+        <img src="free-icon-vk-logo-of-social-network-39699.png" alt="">
+      </div>
+    </div>
+
+    <script>
+      const box = document.querySelector('.cards-container');
+
+function getRandom(min,max){
+  return Math.floor(Math.random()*(max-min)) + min;
+}
+
+fetch(`https://rickandmortyapi.com/api/character?page=1`, {
+    headers: {
+        "characters": "https://rickandmortyapi.com/api/character",
+        "locations": "https://rickandmortyapi.com/api/location",
+        "episodes": "https://rickandmortyapi.com/api/episode"
+    }
+  })
+    .then(res => res.json())
+    .then(data => {
+      box.innerHTML = '';
+      let character = data.results;
+      for(let i = 0; i < 9; i++){
+        box.innerHTML += `
+        <div class="card">
+            <div class="img-card"><img src="${character[i].image}"/></div>
+            <div class="text-card">
+                <h3>${character[i].name}</h3>
+                <p>${character[i].status} - ${character[i].species} <br> Gender: ${character[i].gender}</p>
+                <h4>Price: ${getRandom(200, 4000)}$</h4>
+            </div>
+        </div>
+        `
+      }
+    });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

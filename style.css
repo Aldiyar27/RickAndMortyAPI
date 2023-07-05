@@ -1,0 +1,498 @@
+body{
+    font-family: 'Inconsolata', monospace;
+    margin: auto;
+    padding: auto;
+    background-color: rgb(199, 245, 245);
+}
+.logo img{
+    width: 130px ;
+    height: 70px;
+    margin-left: 50px;
+}
+
+.header{
+    margin-left: 10%;
+    font-size: 18px;
+    display: flex;
+    padding: 10px;
+}
+
+.text-header{
+    font-weight:600;
+    margin-top: 25px;
+    margin-left: 53%;
+    text-decoration: none;
+    font-style: normal;
+} 
+a{
+    margin: 15px;
+    text-decoration: none;
+    color: black;
+}
+.text-header button{
+    text-decoration: none;
+    font-weight: 600;
+    height: 50px;
+    color: white;
+    border: 0 solid black;
+    background-color:rgb(157, 95, 214);
+    /*#00b5cc*/
+    padding: 10px 13px 10px 13px;
+}
+
+
+.poster-box{
+    margin-top: 110px;
+    margin-left: 380px;
+}
+
+.poster-box img{
+    margin-left: 100px;
+    width: 300px;
+    height: 120px;
+}
+
+.poster-box p{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.carousel{
+    margin-top: 80px;
+    margin-left: 150px;
+    width: 200px;
+    height: 300px;
+}
+.carousel-item{
+    width: 200px;
+    height: 300px;
+}
+
+.first-body{
+    border-radius: 40px;
+    margin-left: 4%;
+    margin-right: 4%;
+    width: 92%;
+    height: 450px;
+    margin-top: 20px;
+    display: flex;
+    background-color:rgb(88, 220, 220); 
+    padding: 10px;
+}
+
+.card img{
+    width: 190px;
+    height: 280px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.text-card{
+    margin-top: 13px;
+    margin-left: 13px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards-container{
+    margin-left: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
+    width: 385px;
+    height: 280px;
+    color: rgb(0, 0, 0);
+    background-color:rgb(88, 220, 220);
+    border: 0px solid black; 
+
+    transition: 0.5s; 
+}
+
+.card:hover {
+    transform: scale(1.1); 
+}
+
+.title{
+    border-radius: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: rgb(157, 95, 214);
+    margin-left: 4%;
+    margin-right: 4%;
+    width: 92%;
+    height: 50px;
+    justify-content: center;
+}
+
+.title p {
+    color: white;
+    font-size: 28px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 44%;
+}
+
+.shop-btn{
+    border-radius: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: rgb(157, 95, 214);
+    margin-left: 43%;
+    margin-right: 40%;
+    width: 15%;
+    height: 38px;
+
+    transition: 0.5s; 
+}
+
+.shop-btn:hover {
+    transform: scale(1.02); 
+}
+
+.shop-btn a {
+    color: white;
+    font-size: 23px;
+    margin-left: 11%;
+}
+
+.down-body{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(88, 220, 220); 
+    display: flex;
+}
+
+.logo-down{
+    margin-left: 650px;
+    font-size: 17px;
+}
+
+.logo-down img{
+    width: 180px;
+    height: 100px;
+    margin-top: 70px;
+    position: relative;
+    top: 12px;
+}
+
+.contacts img{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    margin-left: 30px;
+}
+
+.contacts{
+    font-size: 17px;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.coupon{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(88, 220, 220); 
+}
+
+.img-coupon img{
+    width: 120px;
+    height: 120px;
+    margin-right: 30px;
+    margin-left: 700px;
+    margin-top: 60px;
+}
+
+.text-coupon{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 60px;
+}
+
+.input-coupon{
+    display: flex;
+    flex-direction: column; 
+}
+
+.input-coupon input{
+    height: 25px;  
+}
+
+.input-coupon button{
+    font-size: 14px;
+    color: black;
+    width: 80px;
+    height: 25px;
+    margin-top: 10px;
+}
+
+.cards-shop{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.cards-basket{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.form{
+    border-radius: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: rgb(157, 95, 214);
+    margin-left: 4%;
+    margin-right: 4%;
+    width: 92%;
+    height: 50px;
+    justify-content: center;
+    color: white;
+}
+
+.form input{
+    margin-top: 10px;
+    margin-left: 37%;
+}
+
+.form button{
+    color: black;
+    background-color: white;
+}
+.form button:hover{
+    color: black;
+    background-color: white;
+}
+
+.card button{
+    width: 45px;
+    height: 45px;
+    background-image:url('shop.png');
+}
+
+.card button img{
+    width: 30px;
+    height: 30px;
+}
+.card button:hover {
+    transform: scale(1.1); 
+}
+
+.card-buy{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    
+    width: 800px;
+    height: 280px;
+    color: rgb(0, 0, 0);
+    background-color:rgb(88, 220, 220);
+    border: 0px solid black; 
+
+    transition: 0.5s; 
+}
+
+.card-buy img{
+    width: 190px;
+    height: 280px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.card-buy .text-card{
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+.buy{
+    padding: 30px;
+    background-color: rgb(192, 137, 244);
+    width: 1000px;
+    height: max-content;
+    margin: auto;
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+
+.buy h2{
+    margin: auto;
+    color: white;
+}
+
+.plus{
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: 900;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1 solid black;
+}
+
+.minus{
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: 900;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1 solid black;
+}
+
+.price-button{
+    display: flex;
+    color: white;
+}
+
+.price-button button{
+    background-color: white;
+    border-radius: 10px;
+    border: 0.5 solid black;
+    margin-left: 20px;
+}
+
+.price-button h4{
+    margin-top: 10px;
+    margin-left: 715px;
+}
+
+
+
+.login-page{
+    height: 400px;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 30px;
+
+    border-radius: 20px;
+    background-color:rgb(88, 220, 220);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-regis{
+    border-radius: 10px;
+    padding-top: 20px;
+    background-color: rgb(230, 228, 228);
+    color:rgb(29, 29, 29);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+    width: 320px;
+    height: 300px;
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+
+    box-shadow: 1px 1px 10px 2px rgb(77, 77, 77);
+}
+
+.text-input{
+    border: 1px solid white;
+    width: 75%;
+    padding: 9px 17px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 58%
+
+}
+
+.btn1{
+    margin-top: 10px;
+    border: 1px solid rgb(157, 95, 214);
+    width: 87%;
+    padding: 8px 17px;
+    background-color: rgb(157, 95, 214);
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 60%;
+    box-shadow: 0px 4px 0px 0px rgb(110, 40, 176);
+}
+
+.btnRegister{
+    margin-top: 10px;
+    border: 1px solid rgb(157, 95, 214);
+    width: 87%;
+    padding: 8px 17px;
+    background-color: rgb(157, 95, 214);
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 60%;
+    box-shadow: 0px 4px 0px 0px rgb(110, 40, 176);
+}
+
+.btnRegister:active{
+    border: 1px solid rgb(157, 95, 214);
+    background-color: white;
+    color: rgb(157, 95, 214);;
+}
+
+.btnLog{
+    margin-top: 10px;
+    border: 1px solid rgb(157, 95, 214);
+    width: 87%;
+    padding: 8px 17px;
+    background-color: rgb(157, 95, 214);
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 60%;
+    box-shadow: 0px 4px 0px 0px rgb(110, 40, 176);
+}
+
+.btnLog:active{
+    border: 1px solid rgb(157, 95, 214);
+    background-color: white;
+    color: rgb(157, 95, 214);;
+}
+
+.sign{
+    font-size: 15px;
+}
+
+.profile-page{
+    height: 200px;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 30px;
+
+    border-radius: 20px;
+    background-color:rgb(88, 220, 220);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
